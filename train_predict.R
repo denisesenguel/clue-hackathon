@@ -26,4 +26,4 @@ user_symptoms_total$probability <- apply(user_symptoms_total, 1, process)
 drops <- c("cycle_id")
 user_symptoms_total <- user_symptoms_total[ , !(names(user_symptoms_total) %in% drops)]
 
-write.table(user_symptoms_total, file="result.txt", sep=",", quote=FALSE, row.names=FALSE)
+write.table(user_symptoms_total, file = "result.txt", sep = ",", quote = FALSE, row.names = FALSE)
